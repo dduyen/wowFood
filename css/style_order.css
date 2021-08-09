@@ -1,0 +1,84 @@
+.food-search .container{
+    padding: 5% auto;
+
+}
+
+h3{
+   
+    color:white;
+    font-size:1.5rem;
+}
+
+h5{
+    display:flex;
+    color:black;
+    font-size:1.2rem;
+    
+}
+h5:before, h5:after {
+    color:white;
+    content:'';
+    flex:1;
+    border-bottom:groove 2px;
+    margin:auto 0.25em;
+    box-shadow: 0 -1px ;/* ou 0 1px si border-style:ridge */
+  }
+form{
+    width: 70%;
+    
+}
+.select_food, .delivery{
+    padding-left: 10%;
+
+    border-radius: 10px;
+}
+
+.food_block{
+    display: flex;
+    
+}
+h5{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.food_block img{
+    width: 20%;
+    height: 20%;
+    border-radius: 15px;
+}
+.food_block > div{
+    padding-left: 10%;
+}
+.food_block input{
+    width: 200%;
+}
+.delivery label{
+    display: block;
+    padding: 2% 0px;
+    font-weight: bold;
+}
+.food-search input,textarea  {
+    border-radius: 5px;
+    padding: 1% 2%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+.food-search .submit{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+    background-color: rgb(211, 25, 96);
+    color: white;
+}
+
+.food-search.submit:hover{
+    background-color: red;
+}
+@media only screen and (max-width: 768px) {
+    h3{
+        font-size: 0.7rem;
+        line-height:50px ;
+    }
+}

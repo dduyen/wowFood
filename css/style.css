@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .container h1{
+    width: 10%;
+}
+.navbar .container li{
+    display: inline-block;
+    align-items: center;
+    padding: 10% 10px;
+}
+.navbar .container li:hover{
+    background-color: salmon;
+    
+}
+.navbar .container li:hover a{
+    color: black;
+}
+.navbar .container li a{
+    color: salmon;
+    font-size: 1.5rem;
+}
+
+.food-search{
+    background-image: url(../imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.food-search .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15% 15%;
+}
+.food-search .container input:first-child{
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.food-search .container input:nth-child(2){
+    width: 20%;
+    border: none;
+    outline: none;
+    padding: 10px 2px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    background-color: salmon;
+    color: white;
+    margin-left: 1%;
+}
+.food-search .container input:nth-child(2):hover{
+    background-color: rgb(201, 76, 62);
+    color: black;
+}
+.categories h2{
+   text-align: center;
+    font-size: 1.8rem;
+    font-style: bold;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+.categories .explore .list-explore{
+
+    width: 28%;
+    display: float;
+    float: left;
+    margin: 2%;
+    position: relative;
+}
+.categories .explore .list-explore img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.categories h4{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.float{
+    clear: both;
+}
+.food-menu{
+    background-color: gray;
+    margin-top: 50px;
+    padding-top: 50px;
+   
+    
+}
+.food-menu .container{
+    /* display: flex;
+    justify-content: center; */
+}
+
+.food-menu h2{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: bold;
+    padding-bottom: 30px;
+  
+}
+
+.Lists{
+    /* display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 8% 8% ; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.details-food{
+  
+    width: 40%;
+   display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 6%;
+}
+.details-food :nth-child(6){
+   
+}
+.details-food img{
+    padding: 10px 10px;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+}
+.details-food>div{
+    padding-left: 10px;
+}
+.details-food h4{
+    line-height: 30px;
+    font-size: 1rem;
+}
+.details-food p{
+    line-height: 20px;
+}
+.details-food button{
+    padding: 10%;
+    background-color: salmon;
+
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}
+.details-food button:hover{
+    background-color: rgb(221, 65, 37);
+}
+.details-food button:hover a{
+    color: black;
+}
+.details-food button a{
+    color: white;
+    font: size 1.2em; ;
+}
+.container > a{
+    
+    display: flex;
+    justify-content: center;
+}
+.container > a:hover{
+    color: brown;
+   
+}
+.social{
+    margin-top: 50px;
+}
+.social .container {
+    display: flex;
+    justify-content: center;
+}
+.social li{
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.social li:hover{
+    background-color: thistle;
+}
+.footer .container{
+    display: flex;
+    justify-content: center;
+}
+.footer a:hover{
+    color: red;
+} 
+@media only screen and (max-width: 768px) {
+    .food-search .container input:first-child,.food-search .container input:nth-child(2) {
+        font-size: 0.5rem;
+    }
+    .navbar .container{
+      display: flex;
+      flex-direction:row;
+    }
+    .navbar .container ul{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar .container ul{
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+    .navbar .container li {
+        padding: 0 10px;
+    }
+
+    .details-food{
+       width: 99%;
+    }
+    .food-menu{
+        
+    }
+  }
